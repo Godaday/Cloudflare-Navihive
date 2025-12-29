@@ -1775,7 +1775,8 @@ function App() {
           </Dialog>
 
           {/* GitHub角标 - 在移动端调整位置 */}
-          <Box
+          {
+           <Box
             sx={{
               position: 'fixed',
               bottom: { xs: 8, sm: 16 },
@@ -1807,7 +1808,8 @@ function App() {
             >
               <GitHubIcon />
             </Paper>
-          </Box>
+          </Box> 
+          }
         </Container>
       </Box>
     </ThemeProvider>

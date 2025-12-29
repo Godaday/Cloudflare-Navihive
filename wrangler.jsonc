@@ -23,8 +23,9 @@
     ],
     "vars": {
         "AUTH_ENABLED": "true",
+         "AUTH_REQUIRED_FOR_READ": "false",
         "AUTH_USERNAME": "hollysys",
-        "AUTH_PASSWORD": "hollysys",
-        "AUTH_SECRET": "hollysys"
+         "AUTH_PASSWORD": "$2a$10$.JeemUyUxjTrPtBK8B3Rd.5wi5gJEx9R5x26cfMKzvYGKtVROyhPi",
+        "AUTH_SECRET": ""
     }
 }
