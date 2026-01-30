@@ -14,6 +14,7 @@ import {
   IconButton,
   Box,
   Fade,
+  Tooltip
 } from '@mui/material';
 import SettingsIcon from '@mui/icons-material/Settings';
 import DragIndicatorIcon from '@mui/icons-material/DragIndicator';
@@ -124,7 +125,7 @@ const SiteCard = memo(function SiteCard({
         }}
       >
         {isEditMode ? (
-          <Box
+          <Box 
             sx={{
               height: '100%',
               p: { xs: 1.5, sm: 2 },
@@ -214,6 +215,14 @@ const SiteCard = memo(function SiteCard({
             </Typography>
           </Box>
         ) : (
+          <Tooltip
+  title={
+    site.notes || ''
+  }
+  arrow
+  placement="top"
+  enterDelay={300}
+>
           <CardActionArea onClick={handleCardClick} sx={{ height: '100%' }}>
             <CardContent
               sx={{
@@ -328,6 +337,7 @@ const SiteCard = memo(function SiteCard({
               )}
             </CardContent>
           </CardActionArea>
+        </Tooltip>
         )}
       </Card>
     </Box>

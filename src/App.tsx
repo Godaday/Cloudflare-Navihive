@@ -9,6 +9,7 @@ import LoginForm from './components/LoginForm';
 import SearchBox from './components/SearchBox';
 import { sanitizeCSS, isSecureUrl, extractDomain } from './utils/url';
 import { SearchResultItem } from './utils/search';
+import Footer from './components/Footer';
 import './App.css';
 import {
   DndContext,
@@ -36,7 +37,7 @@ import {
   CircularProgress,
   Alert,
   Stack,
-  Paper,
+  // Paper,
   createTheme,
   ThemeProvider,
   CssBaseline,
@@ -61,7 +62,7 @@ import {
 import SortIcon from '@mui/icons-material/Sort';
 import SaveIcon from '@mui/icons-material/Save';
 import CancelIcon from '@mui/icons-material/Cancel';
-import GitHubIcon from '@mui/icons-material/GitHub';
+// import GitHubIcon from '@mui/icons-material/GitHub';
 import AddIcon from '@mui/icons-material/Add';
 import CloseIcon from '@mui/icons-material/Close';
 import SettingsIcon from '@mui/icons-material/Settings';
@@ -1774,7 +1775,7 @@ function App() {
             </DialogActions>
           </Dialog>
 
-          GitHub角标 - 在移动端调整位置
+          {/* GitHub角标 - 在移动端调整位置 */}
           {/* {
            <Box
             sx={{
@@ -1810,8 +1811,19 @@ function App() {
             </Paper>
           </Box> 
           } */}
+
+
+
+
+  
+
         </Container>
+
+
+
+
       </Box>
+       <Footer />
     </ThemeProvider>
   );
 }
