@@ -9,7 +9,7 @@ import LoginForm from './components/LoginForm';
 import SearchBox from './components/SearchBox';
 import { sanitizeCSS, isSecureUrl, extractDomain } from './utils/url';
 import { SearchResultItem } from './utils/search';
-import Footer from './components/Footer';
+import Footer from './components/footer';
 import './App.css';
 import {
   DndContext,
@@ -939,6 +939,7 @@ function App() {
           overflow: 'hidden', // 防止背景图片溢出
         }}
       >
+           
         {/* 背景图片 */}
         {configs['site.backgroundImage'] && isSecureUrl(configs['site.backgroundImage']) && (
           <>
@@ -1187,7 +1188,9 @@ function App() {
                     }
                   }}
                 />
+ <Footer />
               </Box>
+               
             );
           })()}
 
@@ -1823,7 +1826,7 @@ function App() {
 
 
       </Box>
-       <Footer />
+  
     </ThemeProvider>
   );
 }
